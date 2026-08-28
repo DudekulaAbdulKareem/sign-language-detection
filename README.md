@@ -1,8 +1,4 @@
-# <h align="center">🤟 Sign Language Detection</h>
-
-<p align="center">
-  <strong>Real-Time Sign Language Detection using YOLO, OpenCV & Flask</strong>
-</p>
+# <p align="center"> <h1 align="center">🤟 Sign Language Detection</h1> </p> <p align="center"> <strong>Real-Time Sign Language Detection using YOLO, OpenCV & Flask</strong> </p>
 
 <p align="center">
   A computer vision application that detects sign-language gestures through image uploads and real-time webcam interaction.
