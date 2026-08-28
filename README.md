@@ -2,19 +2,19 @@
 
 > Real-time sign language detection using YOLO, OpenCV, and Flask.
 
-A computer vision application that detects and recognizes hand signs through image input and real-time webcam detection.
+A computer vision application that detects and recognizes common sign-language gestures using a trained YOLO model. The application provides a web interface for image-based and real-time webcam detection.
 
 ---
 
 ## 🚀 Overview
 
-This project uses a trained YOLO object detection model to recognize common sign-language gestures.
+This project uses a trained YOLO object detection model to recognize sign-language gestures through a Flask web application.
 
-The application provides a simple web interface built with Flask, allowing users to upload images or use their webcam for real-time detection.
+The system is designed to demonstrate how deep learning and computer vision can be combined with a web interface to create an accessible real-time sign-language detection application.
 
 ### Supported Signs
 
-| Sign | Detection |
+| Gesture | Class |
 |---|---|
 | 👋 | Hello |
 | ❤️ | I Love You |
@@ -27,18 +27,35 @@ The application provides a simple web interface built with Flask, allowing users
 ## ✨ Features
 
 - 🤖 YOLO-based sign-language detection
-- 📷 Image upload detection
+- 📷 Image upload interface
 - 🎥 Real-time webcam detection
 - 🌐 Flask web application
+- 🧠 Deep-learning-based object detection
 - 📊 Confidence-based predictions
 - ⚡ Real-time computer vision processing
-- 🎨 Clean and responsive web interface
+- 🎨 Clean and responsive user interface
+
+---
+
+## 📸 Application Preview
+
+### 🏠 Home Page
+
+![Home Page](screenshots/home.png)
+
+### 📤 Image Upload
+
+![Upload Page](screenshots/upload.png)
+
+### 🎥 Live Detection
+
+![Live Detection](screenshots/live.png)
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Programming
+### Programming Language
 
 - Python
 
@@ -58,31 +75,29 @@ The application provides a simple web interface built with Flask, allowing users
 - HTML
 - CSS
 
-### Development Tools
+### Tools
 
 - Git
 - GitHub
-- VS Code / Antigravity
+- Antigravity
 
 ---
 
 ## 🧠 How It Works
 
 ```text
-User
-  │
-  ├── Upload Image
-  │
-  └── Webcam
-        │
-        ▼
-   Flask Application
-        │
-        ▼
-   YOLO Detection Model
-        │
-        ▼
-  Sign Classification
-        │
-        ▼
- Detection Result
+                    👤 User
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+        📷 Image Upload      🎥 Webcam
+             │                   │
+             └─────────┬─────────┘
+                       ↓
+                🌐 Flask App
+                       ↓
+                🤖 YOLO Model
+                       ↓
+              🧠 Sign Detection
+                       ↓
+                📊 Prediction
