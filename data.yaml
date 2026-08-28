@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Hello', 'I Love You', 'No', 'Thanks', 'Yes']
+
+roboflow:
+  workspace: dvn-prithvi-raj
+  project: sign_language-mrdoz
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/dvn-prithvi-raj/sign_language-mrdoz/dataset/1

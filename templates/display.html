@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Results - YOLO AI</title>
+</head>
+
+<body>
+    <div class="bg-visuals">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+    <div class="content animate__animated animate__fadeIn">
+        <h1>Analysis Results</h1>
+        <hr>
+        <div class="animate__animated animate__zoomIn">
+            <img src="{{ url_for('static', filename='uploads/output.jpg') }}" alt="Annotated Image">
+        </div>
+        <div style="margin-top: 2rem;">
+            <a href="/upload" class="btn">Analyze Another</a>
+            <a href="/" class="btn" style="background: transparent; border: 1px solid var(--glass-border);">Back to
+                Home</a>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <script>
+        const cursor = document.querySelector('.custom-cursor');
+        const outline = document.querySelector('.custom-cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+
+            outline.style.left = e.clientX - 12 + 'px';
+            outline.style.top = e.clientY - 12 + 'px';
+        });
+
+        document.querySelectorAll('a, button, .btn, label').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2.5)';
+                outline.style.borderColor = 'var(--neon-pink)';
+                outline.style.transform = 'scale(1.5)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                outline.style.borderColor = 'var(--accent-glow)';
+                outline.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>

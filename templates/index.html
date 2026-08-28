@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>YOLO AI - Object Detection</title>
+</head>
+
+<body>
+    <div class="bg-visuals">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+    <div class="content animate__animated animate__zoomIn">
+        <h1 class="animate__animated animate__fadeInDown">YOLO Detection</h1>
+        <hr>
+        <p class="animate__animated animate__fadeInUp">Select a mode to begin.</p>
+        <div class="animate__animated animate__zoomIn">
+            <a href="/video_feed" class="btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Launch Live Feed
+            </a>
+            <a href="/upload" class="btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 0 0 1-2 2H5a2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                Upload Image
+            </a>
+        </div>
+    </div>
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <script>
+        const cursor = document.querySelector('.custom-cursor');
+        const outline = document.querySelector('.custom-cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+
+            outline.style.left = e.clientX - 12 + 'px';
+            outline.style.top = e.clientY - 12 + 'px';
+        });
+
+        document.querySelectorAll('a, button, .btn, label').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(2.5)';
+                outline.style.borderColor = 'var(--neon-pink)';
+                outline.style.transform = 'scale(1.5)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                outline.style.borderColor = 'var(--accent-glow)';
+                outline.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>

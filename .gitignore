@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# User uploaded files
+uploads/
+static/uploads/
+
+# YOLO dataset
+train/
+valid/
+test/
+
+# Logs
+*.log
+
+# Unnecessary documentation files
+README.dataset.txt
+README.roboflow.txt
+github_push_instructions.md
