@@ -1,8 +1,33 @@
 # 🤟 Sign Language Detection
 
-> Real-time sign language detection using YOLO, OpenCV, and Flask.
+<p align="center">
+  <strong>Real-Time Sign Language Detection using YOLO, OpenCV & Flask</strong>
+</p>
 
-A computer vision application that detects and recognizes common sign-language gestures using a trained YOLO model. The application provides a web interface for image-based and real-time webcam detection.
+<p align="center">
+  A computer vision application that detects sign-language gestures through image uploads and real-time webcam interaction.
+</p>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![YOLO](https://img.shields.io/badge/YOLO-Ultralytics-purple)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red?logo=opencv)
+![Flask](https://img.shields.io/badge/Flask-Web%20App-black?logo=flask)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)
+
+</p>
+
+---
+
+## 🎯 Project Highlights
+
+- 🤖 **YOLO-powered** sign-language detection
+- 📷 **Image upload** for gesture detection
+- 🎥 **Live webcam** detection
+- 🌐 **Flask-based** web application
+- 🧠 Deep-learning computer vision model
+- ⚡ Real-time prediction capability
 
 ---
 
