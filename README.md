@@ -142,10 +142,10 @@ The system demonstrates how deep learning and computer vision can be combined wi
     ├── static/
     └── templates/
 
+```
 
----
 
-## ⚙️ Installation
+### ⚙️ Installation
 
 ### 1. Clone the Repository
 
@@ -153,7 +153,6 @@ The system demonstrates how deep learning and computer vision can be combined wi
 git clone https://github.com/DudekulaAbdulKareem/sign-language-detection.git
 
 ```
-
 ### 2. Navigate to the Project Directory
 
 ```bash
@@ -165,3 +164,54 @@ cd sign-language-detection
 ```bash
 pip install -r requirements.txt
 ```
+
+### Run the Application:
+```bash
+    Start the Flask application:
+
+        python app.py
+
+    Then open the application in your browser:
+
+        http://127.0.0.1:5000
+```
+
+### 🎬 Demo
+    The application provides two ways to interact with the sign-language detection system:
+
+    📤 Image Upload — Upload an image and detect the sign-language gesture.
+    🎥 Live Detection — Use your webcam for real-time sign-language detection.
+
+### 💡 Use Cases
+   .🤝 Accessibility technology
+   .🗣️ Sign-language recognition
+   .👨‍💻 Human-computer interaction
+   .🤖 Real-time object detection
+   .🎓 Computer vision learning
+   .💻 Assistive technology
+
+### 🔮 Future Improvements
+    . Add more sign-language gestures
+    . Improve model accuracy
+    . Support complete sign-language sentences
+    . Add text-to-speech functionality
+    . Deploy the application to the cloud
+    . Improve mobile responsiveness
+    . Add multilingual support
+    . Optimize real-time detection performance
+
+### 📌 Project Status
+Status: Completed Portfolio Project 🚀
+
+   The current version supports sign-language gesture detection through image upload and real-time webcam interaction.
+
+### 👨‍💻 Author
+ Abdul Kareem
+
+   Computer Science / Technology Enthusiast passionate about Python, Machine Learning, Data Analytics, and Software Development.
+
+   GitHub:
+   https://github.com/DudekulaAbdulKareem   
+
+### 📄 License
+   This project is available for educational and portfolio purposes.    
