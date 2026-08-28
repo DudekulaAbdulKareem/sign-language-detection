@@ -1,4 +1,4 @@
-# 🤟 Sign Language Detection
+# <h align="center">🤟 Sign Language Detection</h>
 
 <p align="center">
   <strong>Real-Time Sign Language Detection using YOLO, OpenCV & Flask</strong>
