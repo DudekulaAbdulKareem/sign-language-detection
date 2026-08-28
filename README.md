@@ -47,10 +47,6 @@ The system is designed to demonstrate how deep learning and computer vision can 
 
 ![Upload Page](screenshots/upload.png)
 
-### 🎥 Live Detection
-
-![Live Detection](screenshots/live.png)
-
 ---
 
 ## 🛠️ Tech Stack
