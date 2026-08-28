@@ -143,34 +143,88 @@ The system demonstrates how deep learning and computer vision can be combined wi
 
 ### ⚙️ Installation
 
-### 1. Clone the Repository
+### Prerequisites
+- Before running the project, make sure you have:
+    - Python 3.x installed
+    - Git installed
+    - A working webcam for live detection   
 
+You can verify Python is installed by running:
+
+    ```bash
+    python --version
+    ```
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/DudekulaAbdulKareem/sign-language-detection.git
-
 ```
+
 ### 2. Navigate to the Project Directory
 
 ```bash
 cd sign-language-detection
 ```
 
-### 3. Install Dependencies
+### 3. Install the Required Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Application:
-```bash
-    Start the Flask application:
+### 4. Verify the Model File
+Make sure the trained YOLO model file is present in the project folder: 
 
-        python app.py
+    ```bash
+    best.pt
+    ```
 
-    Then open the application in your browser:
+### 5. Start the Application
+ ```bash
+    python app.py
+   ```
 
-        http://127.0.0.1:5000
-```
+### 6. Run the Application:
+- After starting the Flask server, open the URL shown in the terminal.
+ - Usually:
+
+    ```bash
+        Start the Flask application:
+
+            python app.py
+
+        Then open the application in your browser:
+
+            http://127.0.0.1:5000
+    ```
+
+### 7. Using Live Detection
+- For live sign-language detection:
+    - Open the Live Detection page.
+    - Allow browser access to your webcam when prompted.
+    - Make sure your webcam is connected and working.
+    - Position your hand clearly in front of the camera.
+
+### ⚠️ Troubleshooting
+### Python is not recognized
+
+  -  Make sure Python is installed and added to your system PATH.
+
+### Dependencies are missing
+  - Run:
+     ```bash
+     pip install -r requirements.txt
+     ```
+     again from the project directory.
+
+### Webcam is not working
+   Check that your webcam is connected and that your browser has permission to access it.
+
+### Model file not found
+   Make sure best.pt is present in the project directory.
+
+### Model file is missing
+
+  -  Make sure the best.pt file is present in the project folder.
 
 ### 🎬 Demo
     The application provides two ways to interact with the sign-language detection system:
