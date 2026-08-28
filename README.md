@@ -183,22 +183,22 @@ pip install -r requirements.txt
     🎥 Live Detection — Use your webcam for real-time sign-language detection.
 
 ### 💡 Use Cases
-   .🤝 Accessibility technology
-   .🗣️ Sign-language recognition
-   .👨‍💻 Human-computer interaction
-   .🤖 Real-time object detection
-   .🎓 Computer vision learning
-   .💻 Assistive technology
+   - 🤝 Accessibility technology
+   - 🗣️ Sign-language recognition
+   - 👨‍💻 Human-computer interaction
+   - 🤖 Real-time object detection
+   - 🎓 Computer vision learning
+   - 💻 Assistive technology
 
 ### 🔮 Future Improvements
-    . Add more sign-language gestures
-    . Improve model accuracy
-    . Support complete sign-language sentences
-    . Add text-to-speech functionality
-    . Deploy the application to the cloud
-    . Improve mobile responsiveness
-    . Add multilingual support
-    . Optimize real-time detection performance
+   - Add more sign-language gestures
+   - Improve model accuracy
+   - Support complete sign-language sentences
+   - Add text-to-speech functionality
+   - Deploy the application to the cloud
+   - Improve mobile responsiveness
+   - Add multilingual support
+   -  Optimize real-time detection performance
 
 ### 📌 Project Status
 Status: Completed Portfolio Project 🚀
