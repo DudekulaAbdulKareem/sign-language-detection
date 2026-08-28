@@ -125,7 +125,6 @@ The system demonstrates how deep learning and computer vision can be combined wi
 '''
 
 ##📁 Project Structure
-'''
     sign-language-detection/
     │
     ├── app.py
@@ -142,4 +141,27 @@ The system demonstrates how deep learning and computer vision can be combined wi
     │
     ├── static/
     └── templates/
-'''
+
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/DudekulaAbdulKareem/sign-language-detection.git
+
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd sign-language-detection
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
