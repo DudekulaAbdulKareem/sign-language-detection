@@ -203,15 +203,14 @@ pip install -r requirements.txt
 ### 📌 Project Status
 Status: Completed Portfolio Project 🚀
 
-   The current version supports sign-language gesture detection through image upload and real-time webcam interaction.
+   - The current version supports sign-language gesture detection through image upload and real-time webcam interaction.
 
 ### 👨‍💻 Author
- Abdul Kareem
+ * Abdul Kareem
 
-   Computer Science / Technology Enthusiast passionate about Python, Machine Learning, Data Analytics, and Software Development.
+   - Computer Science / Technology Enthusiast passionate about Python, Machine Learning, Data Analytics, and Software Development.
 
-   GitHub:
-   https://github.com/DudekulaAbdulKareem   
+   - GitHub:https://github.com/DudekulaAbdulKareem   
 
 ### 📄 License
-   This project is available for educational and portfolio purposes.    
+   - This project is available for educational and portfolio purposes.    
